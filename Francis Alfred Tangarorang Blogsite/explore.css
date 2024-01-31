@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles that apply to all screen sizes */
+.heading h5 {
+    font-size: 65px;
+    color: hsl(1, 88%, 10%);
+    font-weight: 600;
+    font-family: cursive;
+    margin-top: 150px;
+    text-align: left;
+    margin-left: 22%;
+}
+
+.heading p {
+    font-size: 12px;
+    color: hsl(1, 57%, 16%);
+    font-family: monospace;
+    text-align: center;
+    margin-left: -35%;
+}
+
+.waves {
+    background-color: rgb(214, 230, 0);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 30%;
+    font-family: sans-serif;
+}
+
+.waves:hover {
+    background-color: rgb(148, 139, 16);
+}
+
+.nav-wrapper {
+    background-color: rgb(225, 94, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 50%;
+    border-radius: 20px;
+    transform: translate(30%, 0);
+}
+
+.nav-logo img {
+    height: 30px;
+    width: 50px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+/* Carousel */
+.container3 {
+    width: 54%;
+    transform: translate(10%, -15%);
+    background-color: rgba(225, 160, 6, 0.274);
+    padding: 50px;
+}
+
+.container3 h6 {
+    color: rgb(225, 207, 12);
+    text-align: center;
+}
+
+.carousel {
+    height: 600px;
+    perspective: 300px;
+    margin-top: -80px;
+}
+
+.carousel p {
+    font-family: monospace;
+    font-size: 0.9rem;
+    text-align: center;
+    color: black;
+}
+
+.carousel .carousel-item {
+    width: 450px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+}
+
+/* Footer */
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.container {
+    background-color: rgb(210, 206, 5);
+}
+
+.page-footer1 {
+    background-color: rgb(225, 229, 8);
+    margin-top: auto;
+    padding: 20px;
+}
+
+.white-text {
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+    margin-right: 30%;
+}
+
+.p {
+    font-size: 15px; 
+    text-align: center;
+    font-family: monospace;
+    margin-right: 30%;
+}
+
+.container2 {
+    font-size: 15px;
+    text-align: center;
+    color: red;
+    font-family: monospace;
+}
+
+.socialIcons {
+    display: flex;
+    margin-left: 75%;
+    margin-top: -2%;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 60%;
+    margin-right: 40px;
+    margin-top: 45px;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: rgba(255, 218, 185, 0.493);
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.pp {
+    text-align: center;
+    font-family: monospace;
+    margin-left: 60%;
+}
+
+.row1 {
+    width: 30%;
+    margin-left: 65%;
+    margin-top: -20%;
+}
+
+.card-action {
+    color: rgb(185, 213, 0);
+    font-family: monospace;
+}
+
+.card-title {
+    font-family: monospace;
+}
+
+.row2 {
+    width: 30%;
+    margin-left: 65%;
+    margin-top: -25%;
+    margin-bottom: 5%;
+}
+
+.row2 .card-panel {
+    background-color: rgba(204, 238, 8, 0.753);
+}
+
+.card-content {
+    font-family: monospace;
+}
+
+.row2 .white-text {
+    font-size: 17px;
+    font-family: monospace;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .heading h5 {
+        font-size: 20px;
+    }
+
+    .waves {
+        margin-left: 10%;
+    }
+
+    .input-field {
+        width: 80%;
+        transform: translate(10%, 0);
+    }
+
+    .container3 {
+        width: 90%;
+        transform: translate(5%, -15%);
+    }
+
+    .carousel {
+        height: 400px;
+        margin-top: -50px;
+    }
+
+    .carousel .carousel-item {
+        width: 100%;
+    }
+
+    .p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading h5 {
+        font-size: 30px;
+    }
+
+    .waves {
+        margin-left: 5%;
+    }
+
+    .input-field {
+        width: 90%;
+        transform: translate(5%, 0);
+    }
+
+    .container3 {
+        width: 100%;
+        transform: translate(0, -15%);
+    }
+
+    .carousel {
+        height: 300px;
+        margin-top: -60px;
+    }
+
+    .p {
+        font-size: 18px;
+    }
+
+    .white-text {
+        font-size: 18px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .row1,
+    .row2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .socialIcons {
+        margin-left: 5%;
+    }
+}
